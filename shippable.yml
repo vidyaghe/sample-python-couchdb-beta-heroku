@@ -23,7 +23,7 @@ script: true
 
 
  
-cache: true
+#cache: true
 after_script:
   - cp README.md ./shippable
   - nosetests test.py --with-xunit --xunit-file=shippable/testresults/nosetests.xml
