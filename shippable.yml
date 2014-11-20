@@ -30,5 +30,5 @@ after_script:
   - which python && coverage xml -o shippable/codecoverage/coverage.xml test.py
   
 branches:
-  except:
+    only:
     - master
