@@ -1,6 +1,5 @@
 language: python
 
-
 python:
   - 2.7
   - 2.6
@@ -20,7 +19,6 @@ before_script:
 
 archive: true
 script: true
-
 
 #cache: true
 after_script:
