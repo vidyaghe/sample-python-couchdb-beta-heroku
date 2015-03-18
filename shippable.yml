@@ -20,7 +20,6 @@ before_script:
 archive: true
 script: true
 
-
 #cache: true
 after_script:
   - cp README.md ./shippable
