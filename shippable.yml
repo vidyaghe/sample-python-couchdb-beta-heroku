@@ -1,5 +1,7 @@
 language: python
 
+
+
 python:
   - 2.7
   - 2.6
@@ -29,6 +31,6 @@ after_script:
   - which python && coverage xml -o shippable/codecoverage/coverage.xml test.py
   
 branches:
-    only:
-     - master
+    except:
+     - a-test-pr
 #build_image: shippable/minv2:beta
