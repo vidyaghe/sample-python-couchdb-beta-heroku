@@ -3,6 +3,13 @@ python:
   - 2.7
   - 2.6
 
+env:
+  global:
+    - APP_NAME=php-mongo-beta
+    
+after_success :
+  - git push -f git@heroku.com:$APP_NAME.git master
+  
 # Mongo binds to 127.0.0.1 by default
 services:
   - couchdb
