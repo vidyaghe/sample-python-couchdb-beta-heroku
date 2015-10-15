@@ -37,7 +37,7 @@ after_script:
   - cp README.md ./shippable
   
   
-branches:
-    only:
-     - master
+#branches:
+ #   only:
+  #   - master
 #build_image: shippable/minv2:beta
