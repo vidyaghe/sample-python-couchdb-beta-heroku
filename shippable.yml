@@ -1,10 +1,8 @@
 language: python
 
-
 python:
   - 2.7
   - 2.6
-
 env:
   global:
     - APP_NAME=php-mongo-beta
