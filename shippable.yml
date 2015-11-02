@@ -7,7 +7,7 @@ python:
 # Mongo binds to 127.0.0.1 by default
 services:
   - couchdb
-
+#test pr
 
 install:
   - pip install -r requirements.txt
@@ -20,7 +20,6 @@ before_script:
 archive: true
 script: true
 
-
 #cache: true
 after_script:
   - cp README.md ./shippable
@@ -31,4 +30,5 @@ after_script:
 branches:
     only:
      - master
+     - cache
 #build_image: shippable/minv2:beta
