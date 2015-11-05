@@ -5,7 +5,7 @@ python:
   - 2.6
 env:
   global:
-    - APP_NAME=php-mongo-beta
+    - APP_NAME=ython-couchdb
     
 after_success :
   - git push -f git@heroku.com:$APP_NAME.git master
@@ -28,6 +28,7 @@ script:
   - nosetests test.py --with-xunit --xunit-file=shippable/testresults/nosetests.xml
   - which python && coverage run --branch test.py
   - which python && coverage xml -o shippable/codecoverage/coverage.xml test.py
+
 
 
 #cache: true
