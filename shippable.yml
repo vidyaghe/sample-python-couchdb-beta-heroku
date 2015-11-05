@@ -5,7 +5,7 @@ python:
   - 2.6
 env:
   global:
-    - APP_NAME=ython-couchdb
+    - APP_NAME=python-couchdb
     
 after_success :
   - git push -f git@heroku.com:$APP_NAME.git master
